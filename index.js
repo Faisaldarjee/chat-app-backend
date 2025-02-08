@@ -5,6 +5,7 @@ const dotenv = require('dotenv');
 const cors = require('cors');
 const { Server } = require('socket.io');
 const connectDB = require('./config/db');
+require('dotenv').config();  // Add this at the top
 
 dotenv.config();
 connectDB();
